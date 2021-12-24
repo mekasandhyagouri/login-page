@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux'
-import {useState} from 'react'
 import '../App.css'
 
 
 
 function Home() {
 
-
-  const [state, setstate] = useState(false);
-    const enteredNames = useSelector(state=> state.login.enteredName);
-    const dispatch =useDispatch();
+     const dispatch =useDispatch();
 
 
     const enteredNamelogin = useSelector(state=> state.login.enteredName);
